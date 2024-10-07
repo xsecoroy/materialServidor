@@ -16,6 +16,11 @@ class App
   }
 
   public function home(){
+    if (!isset($_COOKIE["name"]) || !isset($_COOKIE["password"])) {
+      header("Location: ?method=login");
+      exit();
+  }
+
     include('views/home.php');
     
   }
@@ -40,13 +45,9 @@ class App
     setcookie("name","", time() -1);
     setcookie("password", "", time() -1);
     header("Location: ?method=login");
-
-
-    
+    exit();
+ 
   }
-
-
-
  
 }
 

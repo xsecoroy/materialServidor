@@ -10,7 +10,7 @@
     <h2>¡Bienvenido!</h2>
     <br><br>
 
-    <a href="">logout</a>
+    <a href="?method=logout">logout</a>
     
 </body>
 </html>

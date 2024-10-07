@@ -254,7 +254,7 @@ public function invertirCadenas(){
   }
  
 public function repeticionPalabras(){
-  if(!isset($_GET['texto']) || empty($_GET['texto'])) {
+  if(!isset($_GET['texto']) || empty($_GET['texto'])){
     include('views/repeticionpalabras.php'); 
     return;
   }
